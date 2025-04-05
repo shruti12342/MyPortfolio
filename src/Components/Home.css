@@ -1,0 +1,201 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.details{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    overflow: hidden;
+}
+
+.technicalSkills{
+    background-color: rgba(242, 252, 251, 0.97);
+    max-height: 500px;
+    padding: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.techskillsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: x-large;
+    
+    max-width: 200%;
+    padding: 10px;
+    margin: 10px 20px;
+    
+}
+
+.techeducation{
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.maineducation{
+    display: flex;
+    flex-direction: row;
+}
+
+.education{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.education p{
+    color: #51a5ad;
+    font-size: 17px;
+}
+
+.education h6{
+    color: rgb(159, 155, 155);
+}
+
+/* .technicalSkills img{
+    padding: 3px;
+    background-color:white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    border-radius: 5px;
+    width: 90px;
+    height: 10vh;
+} */
+
+.techskill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftdetails{
+    padding: 70px 0px;
+}
+
+.typewriter {
+    font-weight: bold;
+    color: #FF4081;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black; /* Cursor effect */
+    animation: typewriter 3s steps(20) infinite alternate, blink 800ms steps(20) infinite normal;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Blink Effect */
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+
+.rightdetails{
+    padding: 130px 0px;
+}
+
+
+p{
+    font-size: 130%;
+    color: rgb(73, 69, 69);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: #31a7b2;
+}
+
+button{
+    background-color: #31a7b2;
+    border: none;
+    padding: 1%;
+    color: white;
+    border-radius: 5px;
+    font-size: 140%;
+    margin-top: 1%;
+    width: 25%;
+}
+
+.myimg img{
+    width: 60%;
+    height: 70vh;
+    margin-left: 15%;
+}
+
+.leftdetails,
+ .rightdetails{
+    width: 50%;
+}
+
+.smicons a{
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    background-color: #31a7b2;
+    padding: 1%;
+    margin: 2%;
+    margin-left: 0;
+    width: 6%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.expertise{
+    text-align: center;
+    align-items: center;
+}
+
+.mainexpertiseee{
+    display: flex;
+    margin: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sexpertise{
+    margin: 30px;
+}
+
+
+
+/* .sexpertise img{
+    width: 80%;
+    height: 25vh;
+} */
+
+
+.frontenddiv, .backenddiv, .otherdiv{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}

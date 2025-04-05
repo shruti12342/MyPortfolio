@@ -1,0 +1,54 @@
+footer{
+    background-color: #084951;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    flex-direction: row;
+}
+
+footer p{
+    color: white;
+    font-size: 17px;
+}
+
+.fquicklinks a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.fbutton{
+    background-color: #1e7e87;
+    border: none;
+    padding: 5%;
+    width: 80%;
+    color: white;
+    border-radius: 50px;
+    font-size: 80%;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.chats{
+    text-align: left;
+}
+
+.ficons a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.dfooter{
+    background-color: #1e7e87;
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.dfooter p{
+    color: white;
+    font-size: 80%;
+    margin-top: 0.9%;
+}
