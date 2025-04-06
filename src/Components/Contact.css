@@ -97,6 +97,10 @@ form button:disabled {
     cursor: not-allowed;
 }
 
+#emailicon{
+    width: 5px;
+}
+
 .lcontact h3{
     color: #26aab7;
     font-size: 28px;
@@ -168,6 +172,10 @@ form button:disabled {
         padding: 20px;
     }
     
+    #emailic{
+        width: 100.8%;
+    }
+    
     .ep {
         flex-direction: column !important;
     }
@@ -181,6 +189,10 @@ form button:disabled {
     .maincontact {
         padding: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    #emailic{
+        width: 101.7%;
     }
 
     .contacth1{
@@ -199,4 +211,5 @@ form button:disabled {
     #contactForm textarea {
         margin-bottom: 15px;
     }
+
 }

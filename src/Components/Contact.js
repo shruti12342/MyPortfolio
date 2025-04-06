@@ -70,14 +70,15 @@ const Contact = () => {
             <input type='text' name='name' placeholder='Enter your name' required />
 
             <div className='ep' style={{ display: 'flex', flexDirection: 'row' }}>
-              <div className="input-container">
-                <i className="fa fa-envelope"></i>
+              <div className="input-container" id='emailic'>
+                <i className="fa fa-envelope" ></i>
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your email"
                   required
                   style={{ borderLeft: '0px' }}
+                  id='contactemail'
                 />
               </div>
 
