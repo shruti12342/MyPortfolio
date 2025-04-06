@@ -35,7 +35,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <button>Upcoming Projects</button>
+      <button>Upcoming more</button>
     </div>
   )
 }
