@@ -1,10 +1,31 @@
-import React from 'react'
-import './Contact.css'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import './Contact.css';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_hnzz03i', // e.g. service_xyz123
+      'template_7t5v60s', // e.g. template_abc123
+      form.current,
+      'gXTROaaAiBkRBAsBX'   // e.g. TZaBCDEfgH12iJKl3
+    )
+    .then((result) => {
+      alert('Message Sent Successfully!');
+      form.current.reset();
+    }, (error) => {
+      alert('Failed to send message. Please try again.');
+    });
+  };
+
+
   return (
-    <div className='Firstdiv'>
-      <h1 style={{textAlign:'center'}}>Contact me</h1>
+     <div className='Firstdiv'>
+      <h1 style={{ textAlign: 'center' }}>Contact me</h1>
       <div className='maincontact'>
         <div className='lcontact'>
           <h3>Get in touch</h3>
@@ -24,21 +45,43 @@ const Contact = () => {
           </div>
         </div>
         <div className='rcontact'>
-          <form id='contactForm'>
-            <input type='text' id='name' placeholder='Enter your name'/>
-            <div className='ep' style={{display:'flex', flexDirection:'row'}}>
-              <div className="input-container">
-                <i className="fa fa-envelope"></i>
-                <input type="email" placeholder="Enter your email"  style={{borderTopLeftRadius:'0px', borderBottomLeftRadius:'0px', borderLeft:'0px'}}/>
-              </div>
-              <div className="input-container">
-                <i className="fa fa-phone"></i>
-                <input type="tel" placeholder="Enter your phone number"   style={{borderTopLeftRadius:'0px', borderBottomLeftRadius:'0px', borderLeft: '0px', marginRight:'0px'}}/>
-              </div>
+        <form id='contactForm' ref={form} onSubmit={sendEmail}>
+          <input type='text' id='name' name='name' placeholder='Enter your name' required />
+
+          <div className='ep' style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="input-container">
+              <i className="fa fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                style={{ borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px', borderLeft: '0px' }}
+              />
             </div>
-            <textarea id='message' placeholder='Write some message here'/>
-            <button type='submit'>Contact Me</button>
-          </form>
+
+            <div className="input-container">
+              <i className="fa fa-phone"></i>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+                style={{ borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px', borderLeft: '0px', marginRight: '0px' }}
+              />
+            </div>
+          </div>
+
+          <textarea
+            id='message'
+            name='message'
+            placeholder='Write some message here'
+            required
+          />
+
+          <button type='submit'>Contact Me</button>
+        </form>
+
         </div>
       </div>
     </div>

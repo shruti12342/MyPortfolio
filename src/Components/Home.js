@@ -55,63 +55,44 @@ const Home = () => {
         </div>
       </div>
       <div className='technicalSkills'>
-        <h1>Technical Skills</h1>
-        <div className='techskill' style={{display:'flex', flexDirection:'row'}}>
-            <div>
-              <h1>Frontend</h1>
+          <h1>Technical Skills</h1>
+          <div className='techskill'>
+            <div className='top-skills'>
               <div className='frontenddiv'>
-                <div>
-                  <img src={html} alt='reactjs' width={50} height={50}/>HTML
-                </div>
-                <div>
-                  <img src={css} alt='reactjs' width={50} height={50}/>CSS
-                </div>
-                <div>
-                  <img src={bootstrap} alt='reactjs' width={50} height={50}/>Bootstrap
-                </div>
-                <div>
-                  <img src={reactjs} alt='reactjs' width={50} height={50}/>React.js
-                </div>
-                <div>
-                  <img src={js} alt='reactjs' width={50} height={50}/>Javascript
+                <h1>Frontend</h1>
+                <div className='frontenddiv-content'>
+                  <div><img src={html} alt='HTML' />HTML</div>
+                  <div><img src={css} alt='CSS' />CSS</div>
+                  <div><img src={bootstrap} alt='Bootstrap' />Bootstrap</div>
+                  <div><img src={reactjs} alt='React.js' />React.js</div>
+                  <div><img src={js} alt='JavaScript' />JavaScript</div>
                 </div>
               </div>
-            </div>
-            <div>
-              <h1>Backend</h1>
+
               <div className='backenddiv'>
-                <div>
-                  <img src={java} alt='Java' width={50} height={50}/>Java
-                </div>
-                <div>
-                  <img src={nodejs} alt='Nodejs' width={50} height={50}/>Node.js
-                </div>
-                <div>
-                  <img src={expressjs} alt='Express.js' width={50} height={50}/>Express.js
-                </div>
-                <div>
-                  <img src={mongodb} alt='Mongodb' width={50} height={50}/>MongoDB
+                <h1>Backend</h1>
+                <div className='backenddiv-content'>
+                  <div><img src={java} alt='Java'/>Java </div>
+                  <div><img src={nodejs} alt='Nodejs'/>Node.js</div>
+                  <div><img src={expressjs} alt='Express.js'/>Express.js</div>
+                  <div><img src={mongodb} alt='Mongodb'/>MongoDB</div>
                 </div>
               </div>
             </div>
-            <div>
-              <h1>Other</h1>
+
+            <div className='bottom-skills'>
               <div className='otherdiv'>
-              <div>
-                  <img src={github} alt='gihub' width={50} height={50}/>GitHub
-                </div>
-                <div>
-                  <img src={vscode} alt='vscode' width={50} height={50}/>VS Code
-                </div>
-                <div>
-                  <img src={vercel} alt='vercel' width={50} height={50}/>Vercel
+                <h1>Other</h1>
+                <div className='other-content'>
+                  <div><img src={github} alt='github'/>GitHub</div>
+                  <div><img src={vscode} alt='vscode'/>VS Code</div>
+                  <div><img src={vercel} alt='vercel'/>Vercel </div>
                 </div>
               </div>
             </div>
-            
-            
+          </div>
         </div>
-      </div>
+
       <div className='techeducation'>
       <h1>Technical Educations</h1>
         <div className='maineducation'>
