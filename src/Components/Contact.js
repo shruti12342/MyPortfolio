@@ -40,12 +40,6 @@ const Contact = () => {
     <div className='Firstdiv'>
       <h1 style={{ textAlign: 'center' }} className='contacth1'>Contact me</h1>
 
-      {showPopup && (
-        <div className="popup-message">
-          Message sent successfully!
-        </div>
-      )}
-
       <div className='maincontact'>
         <div className='lcontact'>
           <h3>Connect With Me</h3>
@@ -107,6 +101,11 @@ const Contact = () => {
             <button type='submit' disabled={isSending}>
               {isSending ? 'Sending...' : 'Contact Me'}
             </button>
+            {showPopup && (
+        <div className="popup-message">
+          Message sent successfully!
+        </div>
+      )}
           </form>
         </div>
       </div>

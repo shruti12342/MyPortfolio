@@ -26,11 +26,10 @@ const About = () => {
         
         <div className="rigthseab">
           <h1>
-            I'm Shruti Aryachandra Kamble and I am a{' '}
-            <span style={{ color: '#FF4081' }}>Full Stack Developer</span>
+            I'm Shruti Aryachandra Kamble
           </h1>
           <p>
-            I am a Full Stack Developer with experience in frontend, backend,
+            I am a <span style={{ color: '#FF4081', fontSize:'25px' }}>Full Stack Developer</span> with experience in frontend, backend,
             and database technologies. I have a strong interest in creating
             interactive and user-friendly web applications using various
             programming languages and frameworks. I'm always eager to learn new
@@ -74,8 +73,10 @@ const About = () => {
             <div className="skill">Firebase</div>
             <div className="skill">Bootstrap</div>
             <div className="skill">MongoDB</div>
-            <div className="skill">Git</div>
-            <div className="skill">SQL</div>
+            <div className="skill">GitHub</div>
+            <div className="skill">Java</div>
+            <div className="skill">Node JS</div>
+            <div className="skill">Express JS</div>
           </div>
         </div>
       </div>

@@ -64,7 +64,7 @@ const Home = () => {
                   <div><img src={html} alt='HTML' />HTML</div>
                   <div><img src={css} alt='CSS' />CSS</div>
                   <div><img src={bootstrap} alt='Bootstrap' />Bootstrap</div>
-                  <div><img src={reactjs} alt='React.js' />React.js</div>
+                  <div><img src={reactjs} alt='React.js' />React JS</div>
                   <div><img src={js} alt='JavaScript' />JavaScript</div>
                 </div>
               </div>
@@ -73,8 +73,8 @@ const Home = () => {
                 <h1>Backend</h1>
                 <div className='backenddiv-content'>
                   <div><img src={java} alt='Java'/>Java </div>
-                  <div><img src={nodejs} alt='Nodejs'/>Node.js</div>
-                  <div><img src={expressjs} alt='Express.js'/>Express.js</div>
+                  <div><img src={nodejs} alt='Nodejs'/>Node JS</div>
+                  <div><img src={expressjs} alt='Express.js'/>Express JS</div>
                   <div><img src={mongodb} alt='Mongodb'/>MongoDB</div>
                 </div>
               </div>
