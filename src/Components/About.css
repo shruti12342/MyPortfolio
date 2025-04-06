@@ -1,99 +1,164 @@
 .about {
-    text-align: center;
-    align-items: center;
-    padding: 30px;
-    padding-top: 130px;
-  }
-  
-  .subabout {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .leftseab,
-  .rigthseab {
-    width: 50%; /* Each section takes 50% */
-  }
-  
-  .rigthseab {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .leftseab {
-    border-radius: 50px;
-  }
-  
+  text-align: center;
+  padding: 30px;
+  padding-top: 130px;
+}
+
+.aboutheading {
+  margin-bottom: 40px;
+}
+
+.subabout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftseab,
+.rigthseab {
+  width: 50%;
+}
+
+.rigthseab {
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.divline {
+  color: #51a5ad;
+  border: 1px solid;
+  margin: 30px 20px;
+  font-weight: bold;
+}
+
+.rigthseab p {
+  font-size: 17px;
+}
+
+.rigthseab h1 {
+  color: black;
+  font-size: 28px;
+}
+
+.rigthseab button {
+  background-color: #FF4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.rigthseab button:hover {
+  background-color: #e03070;
+}
+
+/* Skills Section Styles */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.soft-skills, .tech-skills {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  color: #555;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #ff4081;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
   .profile-img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 30%;
-  }
-  
-  .divline {
-    color: #51a5ad;
-    border: 1px solid;
-    margin: 30px 20px 0;
-    font-weight: bold;
-  }
-  
-  .rigthseab p {
-    font-size: 17px;
+    width: 300px;
+    height: 300px;
+    margin-right: 0;
   }
   
   .rigthseab h1 {
-    color: black;
-  }
-  
-  /* Skills Section Styles */
-  .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .skills h2 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+  }
+}
+
+/* Tablet and smaller devices */
+@media screen and (max-width: 768px) {
+  .subabout {
+    flex-direction: column;
   }
   
-  .skills-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .leftseab, .rigthseab {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    margin-right: 0;
+  }
+  
+  .rigthseab {
+    text-align: center;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .about {
+    padding-top: 100px;
+    padding: 15px;
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .rigthseab h1 {
+    font-size: 20px;
+  }
+  
+  .rigthseab p {
+    font-size: 15px;
   }
   
   .skill {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    color: #555;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    font-size: 14px;
+    padding: 8px 15px;
   }
-  
-  .skill:hover {
-    background-color: #ff4081;
-    color: white;
-    transform: translateY(-5px);
-  }
-  
-  .soft-skills .skills-box {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .tech-skills .skills-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  
+}

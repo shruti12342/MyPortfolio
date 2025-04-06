@@ -1,284 +1,267 @@
-body{
-    font-family:'Times New Roman', Times, serif;
-}
-
-
-.details{
-    justify-content: space-between;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styles for larger screens */
+  .details {
     display: flex;
-    flex-direction: row;
     text-align: left;
-    overflow: hidden;
-}
-
-.technicalSkills{
-    background-color: rgba(242, 252, 251, 0.97);
+    padding: 20px;
+  }
+  
+  .leftdetails, .rightdetails {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .myimg img {
+    width: 80%;
+    max-width: 400px;
     height: auto;
-    padding: 70px;
-    text-align: center;
-    align-items: center;
-}
-
-.techskillsDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    font-size: x-large;
-    
-    max-width: 200%;
-    padding: 10px;
-    margin: 10px 20px;
-    
-}
-
-.techeducation{
-    text-align: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.maineducation{
-    display: flex;
-    flex-direction: row;
-}
-
-.education{
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    margin: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    text-align: left;
-}
-
-.education p{
-    color: #51a5ad;
-    font-size: 17px;
-}
-
-.education h6{
-    color: rgb(159, 155, 155);
-}
-
-/* .technicalSkills img{
-    padding: 3px;
-    background-color:white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-    margin: 30px;
-    border-radius: 5px;
-    width: 90px;
-    height: 10vh;
-} */
-
-.techskill{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.leftdetails{
-    padding: 70px 0px;
-}
-
-.typewriter {
-    font-weight: bold;
-    color: #FF4081;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid black; /* Cursor effect */
-    animation: typewriter 3s steps(20) infinite alternate, blink 800ms steps(20) infinite normal;
-}
-
-/* Typing Effect */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-/* Cursor Blink Effect */
-@keyframes blink {
-    from {
-        border-color: black;
-    }
-    to {
-        border-color: transparent;
-    }
-}
-
-
-.rightdetails{
-    padding: 130px 0px;
-}
-
-
-p{
-    font-size: 130%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .rightdetails p {
+    font-size: 18px;
     color: rgb(73, 69, 69);
     font-family: 'Poppins', sans-serif;
-}
-
-h1{
+  }
+  
+  h1 {
     color: #31a7b2;
-}
-
-button{
+  }
+  
+  button {
     background-color: #31a7b2;
     border: none;
-    padding: 1%;
+    padding: 10px 20px;
     color: white;
     border-radius: 5px;
-    font-size: 140%;
-    margin-top: 1%;
-    width: 25%;
-}
-
-.myimg img{
-    width: 60%;
-    height: 70vh;
-    margin-left: 15%;
-}
-
-.leftdetails,
- .rightdetails{
-    width: 50%;
-}
-
-.smicons a{
+    font-size: 16px;
+    margin-top: 15px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  .smicons a {
     text-decoration: none;
     color: white;
-    font-size: 150%;
+    font-size: 18px;
     background-color: #31a7b2;
-    padding: 1%;
-    margin: 2%;
-    margin-left: 0;
-    width: 6%;
-    border: none;
+    padding: 8px;
+    margin-right: 10px;
+    display: inline-block;
     border-radius: 5px;
     text-align: center;
-}
-
-.expertise{
+    min-width: 35px;
+  }
+  
+  /* Technical Skills Section */
+  .technicalSkills {
+    background-color: rgba(242, 252, 251, 0.97);
+    padding: 40px 20px;
     text-align: center;
-    align-items: center;
-}
-
-.mainexpertiseee{
-    display: flex;
-    margin: 40px;
-    text-align: center;
-    justify-content: center;
-}
-
-.sexpertise{
-    margin: 30px;
-}
-
-
-
-/* .sexpertise img{
-    width: 80%;
-    height: 25vh;
-} */
-
-
-.frontenddiv, .backenddiv, .otherdiv{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    width: 400px;
-    height: 215px;
-    align-items: center;
-    justify-content: flex-start
-}
-
-.frontenddiv-content, .backenddiv-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.other-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.other-content div{
-    display: flex;
-    align-items:self-start;
-    background-color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.other-content img{
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-}
-
-.frontenddiv-content div {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.backenddiv-content div{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.frontenddiv-content img {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-}
-
-.backenddiv-content img{
-    width: 30px;
-    height: 30px;
-    margin-right: 8px
-}
-
-
-.techskill {
+  }
+  
+  .techskill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
   
   .top-skills {
     display: flex;
     justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
+    gap: 20px;
   }
   
-  .bottom-skills {
-    display: flex;
-    justify-content: center;
+  .frontenddiv, .backenddiv, .otherdiv {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px;
   }
   
+  .frontenddiv-content, .backenddiv-content, .other-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .frontenddiv-content div, .backenddiv-content div, .other-content div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+  
+  .frontenddiv-content img, .backenddiv-content img, .other-content img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+  
+  /* Education Section */
+  .techeducation {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .maineducation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .education {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .education p {
+    color: #51a5ad;
+    font-size: 16px;
+  }
+  
+  .education h6 {
+    color: rgb(159, 155, 155);
+    margin-top: 10px;
+  }
+  
+  /* Expertise Section */
+  .expertise {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .mainexpertiseee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .sexpertise {
+    margin: 15px;
+    max-width: 300px;
+  }
+  
+  .sexpertise img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Medium screens (tablets) */
+  @media screen and (max-width: 900px) {
+    .leftdetails, .rightdetails {
+      padding: 15px;
+    }
+    
+    .rightdetails h1 {
+      font-size: 40px !important;
+    }
+    
+    .frontenddiv, .backenddiv, .otherdiv {
+      max-width: 350px;
+    }
+  }
+  
+  /* Small screens (mobile phones) */
+  @media screen and (max-width: 768px) {
+    .details {
+      flex-direction: column;
+    }
+    
+    .leftdetails, .rightdetails {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .myimg img {
+      width: 60%;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    
+    .rightdetails {
+      padding-top: 20px;
+    }
+    
+    .rightdetails h1 {
+      font-size: 35px !important;
+    }
+    
+    .rightdetails p {
+      font-size: 16px;
+    }
+    
+    button {
+      width: auto;
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+    
+    .technicalSkills, .techeducation, .expertise {
+      padding: 30px 10px;
+    }
+    
+    .top-skills {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .maineducation {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .mainexpertiseee {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Extra small screens */
+  @media screen and (max-width: 480px) {
+    .rightdetails h1 {
+      font-size: 28px !important;
+    }
+    
+    .smicons a {
+      font-size: 16px;
+      padding: 6px;
+      margin-right: 8px;
+    }
+    
+    .education {
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    .frontenddiv, .backenddiv, .otherdiv {
+      padding: 10px;
+    }
+  }

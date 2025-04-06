@@ -1,54 +1,122 @@
-footer{
+footer {
     background-color: #084951;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 100px;
-    flex-direction: row;
+    padding: 40px 20px;
+    flex-wrap: wrap;
 }
 
-footer p{
+footer p {
     color: white;
-    font-size: 17px;
+    font-size: 16px;
+    margin: 8px 0;
 }
 
-.fquicklinks a{
+footer h4 {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1e7e87;
+}
+
+.fcontacts, .fexpertise, .fquicklinks, .fchats {
+    width: 22%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.fquicklinks a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
 }
 
+.fquicklinks a:hover {
+    color: #1e7e87;
+}
 
-.fbutton{
+.fbutton {
     background-color: #1e7e87;
     border: none;
-    padding: 5%;
+    padding: 10px 15px;
     width: 80%;
     color: white;
     border-radius: 50px;
-    font-size: 80%;
+    font-size: 16px;
     font-weight: bold;
-    margin-top: 5%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.chats{
-    text-align: left;
+.fbutton:hover {
+    background-color: #0c5c63;
 }
 
-.ficons a{
+.ficons {
+    margin-top: 15px;
+}
+
+.ficons a {
     text-decoration: none;
     color: white;
-    padding: 15px;
+    padding: 8px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.dfooter{
+.ficons a:hover {
+    color: #1e7e87;
+}
+
+.dfooter {
     background-color: #1e7e87;
     text-align: center;
-    align-items: center;
-    padding: 1px;
+    padding: 10px;
 }
 
-.dfooter p{
+.dfooter p {
     color: white;
-    font-size: 80%;
-    margin-top: 0.9%;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 30px 15px;
+    }
+    
+    .fcontacts, .fexpertise, .fquicklinks, .fchats {
+        width: 45%;
+        margin-bottom: 25px;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    
+    .fcontacts, .fexpertise, .fquicklinks, .fchats {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .fbutton {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    footer h4 {
+        text-align: center;
+    }
+    
+    .ficons {
+        text-align: center;
+    }
 }

@@ -18,10 +18,12 @@ const About = () => {
       <div className="aboutheading">
         <h1>About me</h1>
       </div>
+      
       <div className="subabout">
         <div className="leftseab">
-          <img src={img1} alt="img" className="profile-img" />
+          <img src={img1} alt="Shruti's profile" className="profile-img" />
         </div>
+        
         <div className="rigthseab">
           <h1>
             I'm Shruti Aryachandra Kamble and I am a{' '}
@@ -40,13 +42,14 @@ const About = () => {
             Technology in 2023 from Tulsiramji Gailwad Patil College of
             Engineering and Technology, Mohgaon, Nagpur. Throughout my college
             years, I learned the key concepts of web development and software
-            engineering. I am now ready to apply what I’ve learned to real-world
+            engineering. I am now ready to apply what I've learned to real-world
             projects and improve my skills in the tech field. I look forward to
             working on exciting projects and growing as a developer.
           </p>
-          <button onClick={handleDownload}>Download CV</button>;
+          <button onClick={handleDownload}>Download CV</button>
         </div>
       </div>
+      
       <div className="divline"></div>
       
       {/* Skills Section */}
@@ -60,8 +63,9 @@ const About = () => {
             <div className="skill">Adaptability</div>
           </div>
         </div>
+        
         <div className="tech-skills">
-          <h1 style={{margin:'30px'}}>Technical Skills</h1>
+          <h1>Technical Skills</h1>
           <div className="skills-box">
             <div className="skill">HTML</div>
             <div className="skill">CSS</div>

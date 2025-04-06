@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding-top: 0;
+    min-height: 100vh;
+    padding: 20px 0;
 }
 
 .maincontact{
@@ -28,7 +28,6 @@
 .rcontact{
     padding: 45px;
 }
-
 
 #contactForm input,
 #contactForm textarea {
@@ -78,6 +77,22 @@
 
 form button{
     width: 100%;
+    padding: 10px;
+    background-color: #26aab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #1d8a95;
+}
+
+form button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
 }
 
 .lcontact h3{
@@ -98,7 +113,80 @@ form button{
     margin-bottom: 35px;
 }
 
+.smicons {
+    display: flex;
+    gap: 15px;
+}
 
+.smicons a {
+    font-size: 24px;
+    text-decoration: none;
+}
 
+.popup-message {
+    background-color: #4BB543;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: fit-content;
+    animation: fadeInOut 3s ease-in-out;
+}
+  
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
 
+/* Simple Responsive Styles */
+@media (max-width: 992px) {
+    .maincontact {
+        max-width: 90%;
+    }
+}
 
+@media (max-width: 768px) {
+    .maincontact {
+        flex-direction: column;
+        max-width: 95%;
+    }
+    
+    .lcontact, .rcontact {
+        width: 100%;
+    }
+    
+    .rcontact {
+        padding: 20px;
+    }
+    
+    .ep {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .Firstdiv {
+        padding: 10px;
+    }
+    
+    .maincontact {
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+    
+    .lcontact h3 {
+        font-size: 24px;
+    }
+    
+    .lcontact p {
+        font-size: 14px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        margin-bottom: 15px;
+    }
+}

@@ -27,11 +27,11 @@ const Footer = () => {
         <div className='fchats'>
             <h4>LET'S CHAT</h4>
             <p>Do you have any query?</p>
-            <button className='fbutton'>GET IN TOUCH</button>
+            <button className='fbutton'>Let's Talk</button>
             <div className='ficons'>
-                <a href="https://www.linkedin.com/in/shruti-kamble-5b9733225/" className="fa">&#xf09a;</a>
-                <a href="https://www.linkedin.com/in/shruti-kamble-5b9733225/" className="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/shruti.kamble_sk/" className="fa">&#xf16d;</a>
+              <a href="https://www.facebook.com/profile.php?id=100044642193621" target='_blank' class="fa">&#xf09a;</a>
+              <a href="https://www.linkedin.com/in/shruti-kamble-5b9733225/" target='_blank' class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/shruti.kamble_sk/" target='_blank' class="fa">&#xf16d;</a>
             </div>
         </div>
       </footer>
