@@ -61,6 +61,11 @@ const Contact = () => {
 
         <div className='rcontact'>
           <form id='contactForm' ref={form} onSubmit={sendEmail}>
+          {showPopup && (
+        <div className="popup-message">
+          Message sent successfully!
+        </div>
+      )}
             <input type='text' name='name' placeholder='Enter your name' required  style={{borderRadius:'5px'}} />
 
             <div className='ep' style={{ display: 'flex', flexDirection: 'row' }}>
@@ -101,11 +106,6 @@ const Contact = () => {
             <button type='submit' disabled={isSending}>
               {isSending ? 'Sending...' : 'Contact Me'}
             </button>
-            {showPopup && (
-        <div className="popup-message">
-          Message sent successfully!
-        </div>
-      )}
           </form>
         </div>
       </div>
