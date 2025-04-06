@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import img1 from './Assets/portfoliopic.png';
+import img1 from './Assets/MyProfile1.jpg';
 import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 

@@ -10,6 +10,10 @@
   .projects h1 {
     margin-bottom: 40px;
   }
+
+  .projecth1{
+    margin-top: 2%;
+}
   
   .allprojects {
     display: flex;
@@ -87,6 +91,9 @@
     .uprojects {
       flex-direction: column;
     }
+    .projecth1{
+        margin-top: 10%;
+    }
     
     .p1, .p2 {
       width: 90%;
@@ -102,6 +109,10 @@
   @media screen and (max-width: 480px) {
     .projects {
       padding: 60px 15px 30px;
+    }
+
+    .projecth1{
+        margin-top: 10%;
     }
     
     .p1, .p2 {

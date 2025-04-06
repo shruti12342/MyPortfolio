@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div className='Firstdiv'>
-      <h1 style={{ textAlign: 'center' }}>Contact me</h1>
+      <h1 style={{ textAlign: 'center' }} className='contacth1'>Contact me</h1>
 
       {showPopup && (
         <div className="popup-message">

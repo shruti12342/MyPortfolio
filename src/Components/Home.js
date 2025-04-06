@@ -45,12 +45,12 @@ const Home = () => {
             <h1 style={{fontSize:'55px'}}>Shruti Kamble</h1>
             <p>I am a <span style={{color:'#FF4081', fontWeight:'bold'}}>Full Stack Developer.</span></p>
             <p>I am curious and hardworking, always eager to learn and take on new challenges. I strive to deliver my best work and achieve meaningful results. With a positive attitude, I look forward to growing and making valuable contributions.</p>
-            <div className='smicons'>
+            <div className='smicons' id='hsemiicons'>
               <a href="https://www.facebook.com/profile.php?id=100044642193621" target='_blank' class="fa">&#xf09a;</a>
               <a href="https://www.linkedin.com/in/shruti-kamble-5b9733225/" target='_blank' class="fa fa-linkedin"></a>
               <a href="https://www.instagram.com/shruti.kamble_sk/" target='_blank' class="fa">&#xf16d;</a>
             </div>
-            <button onClick={handleDownload}>Download CV</button>
+            <button onClick={handleDownload} id='hdbtn'>Download CV</button>
 
         </div>
       </div>

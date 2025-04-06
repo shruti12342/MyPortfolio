@@ -6,7 +6,7 @@ import img2 from './Assets/Calculator.png'
 const Projects = () => {
   return (
     <div className='projects'>
-      <h1>Projects</h1>
+      <h1 className='projecth1'>Projects</h1>
       <div className='allprojects'>
         <div className='uprojects'>
           <div className='p1'>
