@@ -41,6 +41,9 @@ const Navbar = () => {
         <p className={pathname === "/contact" ? "active" : ""}>
           <Link to="/contact" onClick={toggleMenu}>Contact</Link>
         </p>
+        <p>
+          <a href='https://github.com/shruti12342' target='_blank' className='gitbtn' style={{color:'white'}}>GitHub Profile</a>
+        </p>
       </div>
     </div>
   );

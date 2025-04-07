@@ -158,3 +158,15 @@
     margin-top: 14%;
   }
 }
+
+
+.gitbtn{
+  background-color:#00838F;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+.gitbtn:hover{
+  background-color: #FF4081;
+}
